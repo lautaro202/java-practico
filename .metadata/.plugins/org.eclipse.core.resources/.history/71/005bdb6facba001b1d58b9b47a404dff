@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		Entrenadores entrenador = new Entrenadores();
+		Scanner input = new Scanner(System.in);
+		entrenador.setName(input.nextLine());
+		entrenador.getName();
+		System.out.println(entrenador.getName());
+		entrenador.setName(null);
+	}
+
+}

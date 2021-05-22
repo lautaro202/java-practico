@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		Entrenadores entrenador = new Entrenadores();
+		Scanner input = new Scanner(System.in);
+		entrenador.setName(input.nextLine());
+		System.out.println(entrenador.getName());
+		entrenador.setSueldo(input.nextDouble());
+		System.out.println(entrenador.getSueldo());
+		entrenador.setCampeonato(input.nextInt());
+		System.out.println(entrenador.getCampeonatos());
+		System.out.println(entrenador.calcularSueldoACobrar());
+	}
+
+}

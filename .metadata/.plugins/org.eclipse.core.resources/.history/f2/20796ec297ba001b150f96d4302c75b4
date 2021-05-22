@@ -1,0 +1,34 @@
+
+public class Circulo {
+	public Circulo() {}
+		private double radio = 1.1;
+		private String colorRelleno = "Hola";
+		private String colorLinea = "color linea";
+		final double PY = Math.PI;
+		
+		public void setRadio(double a) {
+			radio = a;
+		}
+		//void porque no se espera un retorno
+		public double getRadio() {
+			return radio;
+		}
+		public void setRelleno(String a) {
+			colorRelleno = a;
+		}
+		public String getRelleno() {
+			return colorRelleno;
+		}
+		public void setLinea(String a) {
+			colorLinea = a;
+		}
+		public String getLinea() {
+			return colorLinea;
+		}
+		
+		public double calcularArea(double radio, double PY) {
+			return PY * radio;
+		}
+		
+		
+}

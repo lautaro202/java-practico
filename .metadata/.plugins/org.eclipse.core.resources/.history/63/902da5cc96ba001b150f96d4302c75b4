@@ -1,0 +1,10 @@
+
+public class Circulo {
+	public Circulo() {}
+		private double radio = 1.1;
+		private String colorRelleno = "Hola";
+		private String colorLinea = "color linea";
+		public void setRadio(double a) {
+			radio = a;
+		}
+}

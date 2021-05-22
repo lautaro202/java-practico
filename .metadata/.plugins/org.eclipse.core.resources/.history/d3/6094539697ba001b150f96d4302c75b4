@@ -1,0 +1,18 @@
+
+public class Circulo {
+	public Circulo() {}
+		private double radio = 1.1;
+		private String colorRelleno = "Hola";
+		private String colorLinea = "color linea";
+		public void setRadio(double a) {
+			radio = a;
+		}
+		
+		//void porque no se espera un retorno
+		public double getRadio() {
+			return radio;
+		}
+		
+		
+		
+}

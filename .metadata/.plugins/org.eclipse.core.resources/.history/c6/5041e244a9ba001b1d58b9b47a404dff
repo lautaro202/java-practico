@@ -1,0 +1,32 @@
+
+public class Entrenadores {
+	public Entrenadores() {}
+		private String nombre;
+		private int sueldo;
+		private int campeonatosGanados;
+		
+		public void setName(String valor) {
+			nombre = valor;
+			}
+		
+		public String getName() {
+			return nombre;
+		}
+		
+		public void setSueldo(int valor) {
+			sueldo = valor;
+			
+		}
+		public int getSueldo() {
+			return sueldo;
+		}
+		public void setCampeonato(int valor) {
+			campeonatosGanados = valor;
+		}
+		public int getCampeonatos() {
+			return campeonatosGanados;
+		}
+		
+		
+		
+}

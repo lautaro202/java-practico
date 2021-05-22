@@ -1,0 +1,10 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		Circulo circulo;
+		
+		System.out.println(circulo.radio);
+	}
+
+}

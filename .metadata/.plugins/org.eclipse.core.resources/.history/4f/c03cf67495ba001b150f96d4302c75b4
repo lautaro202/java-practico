@@ -1,0 +1,11 @@
+
+public class Circulo {
+
+	public static void main(String[] args) {
+		double radio = 'a';
+		String colorRelleno = "Hola";
+		String colorLinea = "color linea";
+		
+	}
+
+}

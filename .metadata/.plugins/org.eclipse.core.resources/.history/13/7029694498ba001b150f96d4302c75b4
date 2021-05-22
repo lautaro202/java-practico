@@ -1,0 +1,12 @@
+
+public class Main {
+
+	public static void main(String[] args) {
+		double valor;
+		Circulo circulo = new Circulo();
+		circulo.setRadio(2.2);
+		valor = circulo.getRadio();
+		System.out.println(circulo.calcularArea());
+	}
+
+}

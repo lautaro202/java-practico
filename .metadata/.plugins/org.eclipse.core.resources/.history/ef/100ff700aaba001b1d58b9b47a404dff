@@ -1,0 +1,45 @@
+
+public class Entrenadores {
+	public Entrenadores() {}
+		private String nombre;
+		private int sueldo;
+		private int campeonatosGanados;
+		
+		public void setName(String valor) {
+			nombre = valor;
+			}
+		
+		public String getName() {
+			return nombre;
+		}
+		
+		public void setSueldo(int valor) {
+			sueldo = valor;
+			
+		}
+		public int getSueldo() {
+			return sueldo;
+		}
+		public void setCampeonato(int valor) {
+			campeonatosGanados = valor;
+		}
+		public int getCampeonatos() {
+			return campeonatosGanados;
+		}
+		
+		public int calcularSueldoACobrar() {
+			if(campeonatosGanados > 10) {
+				sueldo = sueldo + 50000;
+			}
+			else if (campeonatosGanados >= 5 && campeonatosGanados < 10 ) {
+				sueldo = sueldo + 30000;
+			}
+			else if (campeonatosGanados > 1 && campeonatosGanados <= 4) {
+				sueldo = sueldo + 4000;
+			}
+			return sueldo;
+		}
+		
+		
+		
+}

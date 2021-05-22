@@ -1,0 +1,49 @@
+
+public class Entrenadores {
+	public Entrenadores() {}
+		private String nombre;
+		private double sueldo;
+		private int campeonatosGanados;
+		
+		public void setName(String valor) {
+			nombre = valor;
+			}
+		
+		public String getName() {
+			System.out.println("El nombre del entrenador es " + nombre) ;
+			return nombre;
+		}
+		
+		public void setSueldo(int valor) {
+			sueldo = valor;
+			
+		}
+		public double getSueldo() {
+			System.out.println("el sueldo es de " + sueldo);
+			return sueldo;
+		}
+		public void setCampeonato(int valor) {
+			campeonatosGanados = valor;
+		}
+		public int getCampeonatos() {
+			System.out.println(campeonatosGanados);
+			return campeonatosGanados;
+		}
+		
+		public double calcularSueldoACobrar() {
+			if(campeonatosGanados > 10) {
+				sueldo = sueldo + 50000;
+			}
+			else if (campeonatosGanados >= 5 && campeonatosGanados < 10 ) {
+				sueldo = sueldo + 30000;
+			}
+			else if (campeonatosGanados > 1 && campeonatosGanados <= 4) {
+				sueldo = sueldo + 4000;
+			}
+			System.out.println("su sueldo es de " + sueldo);
+			return sueldo;
+		}
+		
+		
+		
+}

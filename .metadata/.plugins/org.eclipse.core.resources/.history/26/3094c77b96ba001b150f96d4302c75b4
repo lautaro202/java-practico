@@ -1,0 +1,7 @@
+
+public class Circulo {
+	public Circulo() {}
+		double radio = 1.1;
+		String colorRelleno = "Hola";
+		String colorLinea = "color linea";
+}
