@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		int[][] matrizEnteros = new int[10][10];
+		matrizEnteros[0][0] = 1;
+		int suma = 0;
+		for (int i = 0; i < 10; i++) {
+			for (int a = 0; a < 10; a++) {
+				matrizEnteros[i][a] = a;
+			}	
+		}
+		for (int i = 0; i < 10; i++) {
+			for (int a = 0; a < 10; a++) {
+				matrizEnteros[i][a] = i;
+				System.out.println("elemento por cada fila " + i + matrizEnteros[i][a]);
+			}	
+		}
+		for (int i = 0; i < 10; i++) {
+			for (int a = 0; a < 10; a++) {
+				if( matrizEnteros[i][a] < 9 && matrizEnteros[i][a] > 2 ) {
+					suma += matrizEnteros[i][a];
+				}
+			}	
+		}
+		System.out.println("la suma es de " + suma);
+	}
+
+}

@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		int[][] matrizEnteros = new int[10][10];
+		matrizEnteros[0][0] = 1;
+		for (int i = 0; i < 10; i++) {
+			for (int a = 0; a < 10; a++) {
+				matrizEnteros[i][a] = a;
+				System.out.println("elemento x cada columna  = " + matrizEnteros[i][a]);
+			}	
+		}
+		for (int i = 0; i < 10; i++) {
+			for (int a = 0; a < 10; a++) {
+				matrizEnteros[i][a] = i;
+				System.out.println("elemento por cada fila " + matrizEnteros[i][a]);
+			}	
+		}
+	}
+
+}

@@ -1,0 +1,12 @@
+import javax.swing.JOptionPane;
+
+public class GUI {
+
+	public static void main(String[] args) {
+		String name = JOptionPane.showInputDialog("introduzca su nombre");
+		JOptionPane.showConfirmDialog(null, "Su nombre es " + name + " ?");
+		int age = Integer.parseInt(JOptionPane.showInputDialog("introduzca su edad"));
+		JOptionPane.showConfirmDialog(null,  "Su edad es " + age + " ?");
+	}
+
+}

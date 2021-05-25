@@ -1,0 +1,11 @@
+
+public class Compra {
+	public Compra() {}
+		int numeroCompra;
+		boolean mayorista;
+		public Object Producto(String codigo,int precioMenor, int precioMayor ) {
+			return null;
+		}
+	
+	
+}

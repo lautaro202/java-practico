@@ -1,0 +1,15 @@
+import javax.swing.JOptionPane;
+
+public class GUI {
+
+	public static void main(String[] args) {
+		int x = JOptionPane.showInputDialog("introduzca el lado x");
+		JOptionPane.showConfirmDialog(null, "Su nombre es " + x + " ?");
+		int y = Integer.parseInt(JOptionPane.showInputDialog("introduzca su y"));
+		JOptionPane.showConfirmDialog(null,  "Su edad es " + y + " ?");
+		double z = Math.sqrt((x * x) + (y * y));
+        JOptionPane.showMessageDialog(null, "Su hipotenusa es " + z );
+
+	}
+
+}
