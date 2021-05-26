@@ -1,0 +1,19 @@
+import java.util.Scanner;
+
+
+public class FuncionCazaFantasmas {
+
+	public static void main(String[] args) {
+		Teatro teatro = new Teatro();
+		Scanner scanner = new Scanner(System.in);
+		Espectadores espectador = new Espectadores();
+		teatro.setTitle("CazaFantasmas");
+		teatro.setHour("20:00");
+		teatro.setDate("22-10-2018");
+		System.out.println("ingrese su dni");
+		String DNI = scanner.nextLine();
+		espectador.setDNI(DNI);
+		System.out.println(espectador.getDNI());
+	}
+
+}

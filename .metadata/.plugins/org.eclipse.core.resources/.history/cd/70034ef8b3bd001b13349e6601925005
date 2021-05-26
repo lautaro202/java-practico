@@ -1,0 +1,43 @@
+
+public class Teatro {
+		private String titulo;
+		private String fecha;
+		private String hora;
+		private Espectadores[][] salaMatriz = new Espectadores[20][10];
+		private int DIMF;
+		
+
+		
+	public Teatro() {};
+	 public Teatro(String titulo, String fecha, String hora){;
+     this.setTitle(titulo);
+     this.setDate(fecha);
+     this.setHour(hora);
+     for (int i=0;i<DIMF;i++);
+ };
+ 	public void setTitle(String a) {
+ 		this.titulo = a;
+ 	}
+ 	public String getTitle() {
+ 		return this.titulo;
+ 	}
+ 	public void setDate(String a) {
+ 		this.fecha = a;
+ 	}
+ 	public String getDate() {
+ 		return this.fecha;
+ 	}
+ 	public void setHour(String a) {
+ 		this.hora = a;
+ 	}
+ 	public String getHour() {
+ 		return this.hora;
+ 	}
+ 	public boolean devolverFila(int F) {
+ 		if( F > DIMF && F < 0) {
+ 			return false;
+ 		}
+ 		else return true;
+ 	}
+ 
+}

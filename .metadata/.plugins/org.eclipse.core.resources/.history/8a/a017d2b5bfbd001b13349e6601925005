@@ -1,0 +1,50 @@
+import java.util.Scanner;
+
+
+public class FuncionCazaFantasmas {
+
+	public static void main(String[] args) {
+		Teatro teatro = new Teatro();
+		Scanner scanner = new Scanner(System.in);
+		Espectadores espectador = new Espectadores();
+		System.out.println(teatro.toString());
+		teatro.setTitle("CazaFantasmas");
+		teatro.setHour("20:00");
+		teatro.setDate("22-10-2018");
+		Strind DNI = 0;
+		System.out.println("ingrese su nombre");
+		while (DNI.equals(0) && teatro.calcularButacasLibres() > 0) {
+			String name = scanner.nextLine();
+			espectador.setNombre(name);
+			System.out.println("ingrese su edad");
+			int age = scanner.nextInt();
+			espectador.setEdad(age);
+			scanner.nextLine();
+			System.out.println("ingrese su numero de fila que desee");
+			int fila = scanner.nextInt();
+			boolean checkFila = teatro.validarFila(fila);
+			if(checkFila) {
+				System.out.println("La fila está disponible");
+			}
+			if(teatro.validarFila(fila)) {
+				if(teatro.hayButacaLibreEnFila(fila)) {
+					teatro.agregarEspectadorAFila(espectador, fila);
+					System.out.println("Se ha registrado a la fila " + fila);
+					
+				}
+				else {
+					System.out.println("la butaca no se enncuentra disponible, la fila mas cercana disponible es"
+							+ teatro.getPrimeraButaca()
+							);
+				}
+			}	
+			System.out.println("ingrese su dni");
+			DNI = scanner.nextLine();
+			espectador.setDNI(DNI);
+			
+		}
+		
+
+	}
+
+}

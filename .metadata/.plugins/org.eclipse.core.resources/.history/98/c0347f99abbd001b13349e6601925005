@@ -1,0 +1,13 @@
+
+public class Teatro {
+		private String titulo;
+		private String fecha;
+		private String hora;
+		
+	public Teatro() {};
+	 public Teatro(String titulo, String fecha, int hora){;
+     this.setNombre(titulo);
+     this.setDNI(fecha);
+     this.setEdad(hora);
+ };
+}

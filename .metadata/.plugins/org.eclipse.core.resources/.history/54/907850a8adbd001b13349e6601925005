@@ -1,0 +1,32 @@
+
+public class Teatro {
+		private String titulo;
+		private String fecha;
+		private String hora;
+		
+	public Teatro() {};
+	 public Teatro(String titulo, String fecha, int hora){;
+     this.setTitle(titulo);
+     this.setDate(fecha);
+     this.setHour(hora);
+ };
+ 	public void setTitle(String a) {
+ 		this.titulo = a;
+ 	}
+ 	public String getTitle() {
+ 		return this.titulo;
+ 	}
+ 	public void setDate(String a) {
+ 		this.fecha = a;
+ 	}
+ 	public String getDate() {
+ 		return this.fecha;
+ 	}
+ 	public void setHour(String a) {
+ 		this.hora = a;
+ 	}
+ 	public String getHour() {
+ 		return this.hora;
+ 	}
+ 
+}
